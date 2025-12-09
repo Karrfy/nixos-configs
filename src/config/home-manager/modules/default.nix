@@ -30,6 +30,9 @@
     # Import media apps
     ./media/music.nix
     ./media/pictures.nix
+
+    # Import filemanagement apps
+    ./tools/filemanagement.nix
   ];
 
   # Allow unfree packages
