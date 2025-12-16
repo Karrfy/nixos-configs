@@ -21,6 +21,8 @@
       prismlauncher
       modrinth-app
       lunar-client
+      heroic
+      bottles
     ];
     programs.lutris = {
       enable = true;
