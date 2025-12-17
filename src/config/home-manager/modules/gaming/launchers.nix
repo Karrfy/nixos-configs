@@ -23,14 +23,5 @@
       lunar-client
       heroic
     ];
-    programs.lutris = {
-      enable = true;
-      extraPackages = with pkgs; [
-        umu-launcher
-      ];
-      protonPackages = with pkgs; [
-        proton-ge-bin
-      ];
-    };
   };
 }
