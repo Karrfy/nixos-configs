@@ -45,7 +45,6 @@
         enableTailscale = false;
         autoupdate = {
           enable = true;
-          repositoryPath = "/home/jannis/Documents/Repos/nixos-configs";
           configName = "desktop";
         };
       };
