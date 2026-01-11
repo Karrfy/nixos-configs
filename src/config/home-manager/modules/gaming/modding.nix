@@ -19,6 +19,7 @@
   config = lib.mkIf config.home-configurations.gaming.modding.enable {
     home.packages = with pkgs; [
       r2modman
+      nexusmods-app-unfree
     ];
   };
 }
