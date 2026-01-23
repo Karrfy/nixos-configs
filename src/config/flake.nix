@@ -24,12 +24,6 @@
     { self, nixpkgs, ... }@inputs:
     {
       nixosConfigurations = {
-        gamingpc = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./hosts/gamingpc/configuration.nix
-          ];
-        };
         desktop = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
