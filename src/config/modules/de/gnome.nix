@@ -83,6 +83,7 @@
       gnomeExtensions.fullscreen-avoider
 
       gnome-tweaks
+      gnome-firmware
     ];
   };
 }
