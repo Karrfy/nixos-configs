@@ -25,7 +25,6 @@
 
   config = lib.mkMerge [
     (lib.mkIf config.home-configurations.tools.browsers.enable {
-      # Installs firefox with betterfox
       programs.firefox = {
         enable = true;
         profiles.default = {
