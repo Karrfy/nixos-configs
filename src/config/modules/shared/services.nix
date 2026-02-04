@@ -27,6 +27,11 @@
           description = "The name of the nixos configuration inside the flake.";
           example = "gamingpc";
         };
+        onCalendar = lib.mkOption {
+          type = lib.types.str;
+          description = "Systemd onCalendar timer trigger.";
+          default = "5:00";
+        };
       };
     };
   };
@@ -101,7 +106,7 @@
         systemd.timers.auto-update-flake-rebuild = {
           wantedBy = [ "timers.target" ];
           timerConfig = {
-            OnCalendar = "05:00";
+            OnCalendar = config.system-configurations.shared.services.autoupdate.onCalendar;
             Persistent = true;
           };
         };

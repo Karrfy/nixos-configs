@@ -39,13 +39,20 @@
       audio.enable = true;
       usbmuxd.enable = true;
       bootloader.enable = true;
-      nixFeatures.enable = true;
+      nixFeatures = {
+        experimental-features.enable = true;
+        gc = {
+          enable = true;
+          olderThan = "7";
+        };
+      };
       services = {
         enablePrinting = true;
         enableTailscale = false;
         autoupdate = {
           enable = true;
           configName = "desktop";
+          onCalendar = "5:00";
         };
       };
       tools = {
