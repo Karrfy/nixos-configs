@@ -18,6 +18,7 @@
   config = lib.mkIf config.home-configurations.tools.office.enable {
     home.packages = with pkgs; [
       libreoffice
+      trilium-desktop
     ];
   };
 }
