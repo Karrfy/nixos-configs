@@ -24,6 +24,7 @@
     ./shared/bootloader.nix
     ./shared/networking.nix
     ./shared/nixFeatures.nix
+    ./shared/secureboot.nix
     ./shared/services.nix
     ./shared/tools.nix
     ./shared/usb.nix
