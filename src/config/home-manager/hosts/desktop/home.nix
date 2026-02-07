@@ -14,7 +14,10 @@
     de.gnome.enable = true;
 
     developemt.cli.enable = true;
-    developemt.ides.enable = true;
+    developemt.ides = {
+      vscode.enable = true;
+      jetbrains.enable = true;
+    };
 
     gaming.launchers.enable = true;
     gaming.modding.enable = true;
