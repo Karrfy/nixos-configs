@@ -15,6 +15,12 @@
           description = "Enables vscode home manager configurations.";
           default = false;
         };
+        latex = {
+          enable = lib.mkEnableOption {
+            description = "Enables latex ides home manager configurations.";
+            default = false;
+          };
+        };
       };
       jetbrains = {
         enable = lib.mkEnableOption {
@@ -42,16 +48,30 @@
             "git.enableSmartCommit" = true;
             "git.pruneOnFetch" = true;
             "git.confirmSync" = false;
+            "latex-workshop.formatting.latex" = "latexindent";
           };
           extensions = with pkgs.vscode-marketplace; [
             ms-vscode.vs-keybindings
             jnoortheen.nix-ide
             mkhl.direnv
             angular.ng-template
+            james-yu.latex-workshop
           ];
         };
       };
     })
+
+    (lib.mkIf
+      (
+        config.home-configurations.developemt.ides.vscode.enable
+        && config.home-configurations.developemt.ides.vscode.latex.enable
+      )
+      {
+        home.packages = with pkgs; [
+          texliveFull
+        ];
+      }
+    )
 
     (lib.mkIf config.home-configurations.developemt.ides.jetbrains.enable {
       home.packages = with pkgs; [

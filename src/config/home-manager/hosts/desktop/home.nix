@@ -15,7 +15,10 @@
 
     developemt.cli.enable = true;
     developemt.ides = {
-      vscode.enable = true;
+      vscode = {
+        enable = true;
+        latex.enable = true;
+      };
       jetbrains.enable = true;
     };
 
