@@ -29,7 +29,7 @@ jobs:
       - name: Commit flake.lock changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Update flake.lock
+          commit_message: 'chore(deps): update flake.lock'
           branch: main
           commit_options: '--no-verify --signoff'
           file_pattern: '*flake.lock'
