@@ -15,6 +15,7 @@
     ./tools/cli.nix
     ./tools/office.nix
     ./tools/security.nix
+    ./tools/vpn.nix
 
     # Import social apps
     ./social/voicechat.nix

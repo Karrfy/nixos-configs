@@ -44,6 +44,7 @@
         enableExtraBrowsers = true;
       };
       filemanagement.enable = true;
+      vpn.enable = true;
     };
   };
   # This value determines the Home Manager release that your configuration is
