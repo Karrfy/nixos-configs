@@ -46,13 +46,14 @@
           olderThan = "7";
         };
       };
+      secureboot.enable = true;
       services = {
         enablePrinting = true;
         enableTailscale = false;
         autoupdate = {
           enable = true;
           configName = "laptop";
-          onCalendar = "5:00";
+          onCalendar = "0 5 * * 6";
         };
       };
       tools = {
