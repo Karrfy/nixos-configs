@@ -43,7 +43,7 @@
         experimental-features.enable = true;
         gc = {
           enable = true;
-          olderThan = "7";
+          olderThan = "30";
         };
       };
       secureboot.enable = true;
