@@ -62,7 +62,7 @@
     };
 
     # Define localization
-    local.de_us.enable = true;
+    local.de_de.enable = true;
 
     # Define gaming system components
     gaming.steam.enable = true;

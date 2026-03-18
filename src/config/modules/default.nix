@@ -15,6 +15,7 @@
 
     # Import locale settings
     ./local/de_us.nix
+    ./local/de_de.nix
 
     # Import gaming apps
     ./gaming/steam.nix
