@@ -53,7 +53,7 @@
         autoupdate = {
           enable = true;
           configName = "laptop";
-          onCalendar = "0 5 * * 6";
+          onCalendar = "Sat *-*-* 05:00:00";
         };
       };
       tools = {
