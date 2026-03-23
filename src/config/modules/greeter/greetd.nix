@@ -20,11 +20,10 @@
     services.greetd = {
       enable = true;
       settings = rec {
-        initial_session = {
-          command = "${pkgs.niri}/bin/niri";
+        default_session = {
+          command = "${pkgs.tuigreet}/bin/tuigreet --cmd niri-session";
           user = "jannis";
         };
-        default_session = initial_session;
       };
     };
 
