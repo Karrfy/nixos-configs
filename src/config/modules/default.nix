@@ -13,7 +13,6 @@
 
     # Import Display manager
     ./dm/gdm.nix
-    ./dm/dms.nix
 
     # Import locale settings
     ./local/de_us.nix

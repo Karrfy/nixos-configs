@@ -23,27 +23,25 @@
     # enable Niri with DMS
     programs = {
       niri.enable = true;
-      dms-shell = {
-        enable = true;
-
-        systemd = {
-          enable = true;
-          restartIfChanged = true;
-        };
-
-        enableSystemMonitoring = true;
-        enableVPN = true;
-        enableCalendarEvents = true;
-        enableClipboardPaste = true;
-      };
-      dsearch.enable = true;
     };
 
+    security.polkit.enable = true;
+    security.pam.services.swaylock = { };
+
     services.gnome.gnome-keyring.enable = true;
+    hardware.bluetooth.enable = true;
+    services.power-profiles-daemon.enable = true;
+    services.upower.enable = true;
 
     # Add niri/dms packages and shell extensions
     environment.systemPackages = with pkgs; [
       alacritty
+      fuzzel
+      swaylock
+      mako
+      swayidle
     ];
+
+    environment.sessionVariables.NIXOS_OZONE_WL = "1";
   };
 }
