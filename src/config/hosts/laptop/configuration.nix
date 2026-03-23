@@ -27,8 +27,6 @@
   system-configurations = {
     # Define Deskop Enviroment
     de.niri.enable = true;
-    # Define greeter.
-    dm.dms.enable = true;
 
     # Define critical system components
     shared = {

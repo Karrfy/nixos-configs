@@ -20,7 +20,7 @@
     # Enable the X11 windowing system.
     services.xserver.enable = false;
 
-    # enable Niri with DMS
+    # enable Niri
     programs = {
       niri.enable = true;
     };
@@ -33,7 +33,7 @@
     services.power-profiles-daemon.enable = true;
     services.upower.enable = true;
 
-    # Add niri/dms packages and shell extensions
+    # Add niri packages and shell extensions
     environment.systemPackages = with pkgs; [
       alacritty
       fuzzel
