@@ -28,6 +28,9 @@
     # Define Deskop Enviroment
     de.niri.enable = true;
 
+    # Define Greeter
+    greetd.greetd.enable = true;
+
     # Define critical system components
     shared = {
       networking = {

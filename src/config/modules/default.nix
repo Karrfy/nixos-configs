@@ -14,6 +14,9 @@
     # Import Display manager
     ./dm/gdm.nix
 
+    # Import Greeter
+    ./greeter/greetd.nix
+
     # Import locale settings
     ./local/de_us.nix
     ./local/de_de.nix
