@@ -26,9 +26,10 @@
 
   system-configurations = {
     # Define Deskop Enviroment
-    de.gnome.enable = true;
-    # Define Gnome Display Manager.
-    dm.gdm.enable = true;
+    de.niri.enable = true;
+
+    # Define Greeter
+    greeter.greetd.enable = true;
 
     # Define critical system components
     shared = {

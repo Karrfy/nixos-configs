@@ -9,6 +9,7 @@
   imports = [
     # Import desktop enviroment configurations
     ./de/gnome.nix
+    ./de/niri.nix
 
     # Import tool apps
     ./tools/browsers.nix
