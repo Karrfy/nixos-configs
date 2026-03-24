@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  inputs,
   ...
 }:
 
@@ -27,6 +28,7 @@
 
     security.polkit.enable = true;
     security.pam.services.swaylock = { };
+    security.pam.services.login.enableGnomeKeyring = true;
 
     services.gnome.gnome-keyring.enable = true;
     hardware.bluetooth.enable = true;
