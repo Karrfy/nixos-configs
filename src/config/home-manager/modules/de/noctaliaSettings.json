@@ -552,7 +552,7 @@
     },
     "colorSchemes": {
         "useWallpaperColors": false,
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Catppuccin Lavender",
         "darkMode": true,
         "schedulingMode": "off",
         "manualSunrise": "06:30",

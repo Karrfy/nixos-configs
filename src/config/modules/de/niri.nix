@@ -39,11 +39,12 @@
     environment.systemPackages = with pkgs; [
       inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
       alacritty
-      fuzzel
       swaylock
       mako
       swayidle
       xwayland-satellite
+      nautilus
+      adwaita-icon-theme
     ];
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
