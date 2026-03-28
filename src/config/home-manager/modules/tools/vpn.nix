@@ -19,7 +19,7 @@
   config = lib.mkMerge [
     (lib.mkIf config.home-configurations.tools.security.general.enable {
       home.packages = with pkgs; [
-        protonvpn-gui
+        proton-vpn
       ];
     })
   ];
