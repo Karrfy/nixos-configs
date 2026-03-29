@@ -6,6 +6,7 @@
   config,
   pkgs,
   inputs,
+  configName,
   ...
 }:
 
@@ -26,9 +27,9 @@
 
   system-configurations = {
     # Define Deskop Enviroment
-    de.gnome.enable = true;
-    # Define Gnome Display Manager.
-    dm.gdm.enable = true;
+    de.niri.enable = true;
+    # Define Greeter
+    greeter.greetd.enable = true;
 
     # Define critical system components
     shared = {
@@ -80,7 +81,7 @@
   # Import home manager for user
   home-manager = {
     users.jannis = import ./../../home-manager/hosts/desktop/home.nix;
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = { inherit inputs configName; };
   };
 
   # This value determines the NixOS release from which the default
