@@ -32,26 +32,21 @@
 
   outputs =
     { self, nixpkgs, ... }@inputs:
+    let
+      mkSystem =
+        name:
+        nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+            configName = name;
+          };
+          modules = [ ./hosts/${name}/configuration.nix ];
+        };
+    in
     {
       nixosConfigurations = {
-        desktop = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            configName = "desktop";
-          };
-          modules = [
-            ./hosts/desktop/configuration.nix
-          ];
-        };
-        laptop = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            configName = "laptop";
-          };
-          modules = [
-            ./hosts/laptop/configuration.nix
-          ];
-        };
+        desktop = mkSystem "desktop";
+        laptop = mkSystem "laptop";
       };
     };
 }
