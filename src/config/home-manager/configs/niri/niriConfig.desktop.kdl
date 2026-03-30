@@ -192,6 +192,7 @@ layout {
     // If you enable the border, you probably want to disable the focus ring.    
     border {
         off
+    }
 }
 
 // You can also set this to null to disable saving screenshots to disk.
