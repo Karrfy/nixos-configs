@@ -81,7 +81,7 @@
   # Import home manager for user
   home-manager = {
     users.jannis = import ./../../home-manager/hosts/desktop/home.nix;
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = { inherit inputs configName; };
   };
 
   # This value determines the NixOS release from which the default
