@@ -6,10 +6,9 @@
 
 {
   imports = [
-    # Import Desktop enviroments
+    # Import Desktop enviroments/window managers
     ./de/gnome.nix
     ./de/niri.nix
-    ./de/hyprland.nix
 
     # Import Display manager
     ./dm/gdm.nix
