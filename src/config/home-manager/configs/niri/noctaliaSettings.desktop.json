@@ -3,7 +3,9 @@
     "bar": {
         "barType": "simple",
         "position": "top",
-        "monitors": [],
+        "monitors": [
+            "DP-3"
+        ],
         "density": "compact",
         "showOutline": false,
         "showCapsule": false,
@@ -82,6 +84,15 @@
                 }
             ],
             "right": [
+                {
+                    "blacklist": [],
+                    "chevronColor": "none",
+                    "colorizeIcons": false,
+                    "drawerEnabled": true,
+                    "hidePassive": false,
+                    "id": "Tray",
+                    "pinned": []
+                },
                 {
                     "deviceNativePath": "__default__",
                     "displayMode": "graphic-clean",
@@ -174,7 +185,8 @@
                 "Del"
             ]
         },
-        "reverseScroll": false
+        "reverseScroll": false,
+        "smoothScrollEnabled": true
     },
     "ui": {
         "fontDefault": "Sans Serif",
@@ -493,7 +505,9 @@
         "enabled": true,
         "enableMarkdown": false,
         "density": "default",
-        "monitors": [],
+        "monitors": [
+            "DP-3"
+        ],
         "location": "top_right",
         "overlayLayer": true,
         "backgroundOpacity": 1,
@@ -558,7 +572,8 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "generationMethod": "tonal-spot",
-        "monitorForColors": ""
+        "monitorForColors": "",
+        "syncGsettings": true
     },
     "templates": {
         "activeTemplates": [],
