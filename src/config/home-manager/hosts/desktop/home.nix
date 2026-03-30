@@ -2,7 +2,6 @@
   config,
   pkgs,
   inputs,
-  configName,
   ...
 }:
 
@@ -12,7 +11,7 @@
   ];
 
   home-configurations = {
-    de.niri.enable = true;
+    de.gnome.enable = true;
 
     developemt.cli.enable = true;
     developemt.ides = {
