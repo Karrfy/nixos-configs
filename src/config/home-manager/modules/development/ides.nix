@@ -21,6 +21,12 @@
             default = false;
           };
         };
+        haskell = {
+          enable = lib.mkEnableOption {
+            description = "Enables haskell ides home manager configurations.";
+            default = false;
+          };
+        };
       };
       jetbrains = {
         enable = lib.mkEnableOption {
@@ -49,6 +55,7 @@
             "git.pruneOnFetch" = true;
             "git.confirmSync" = false;
             "latex-workshop.formatting.latex" = "latexindent";
+            "haskell.manageHLS" = "PATH";
           };
           extensions = with pkgs.vscode-marketplace; [
             ms-vscode.vs-keybindings
@@ -56,10 +63,25 @@
             mkhl.direnv
             angular.ng-template
             james-yu.latex-workshop
+            haskell.haskell
           ];
         };
       };
     })
+
+    (lib.mkIf
+      (
+        config.home-configurations.developemt.ides.vscode.enable
+        && config.home-configurations.developemt.ides.vscode.haskell.enable
+      )
+      {
+        home.packages = with pkgs; [
+          ghc
+          cabal-install
+          haskell-language-server
+        ];
+      }
+    )
 
     (lib.mkIf
       (

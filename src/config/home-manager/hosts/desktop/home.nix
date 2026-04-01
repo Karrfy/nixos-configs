@@ -18,6 +18,7 @@
       vscode = {
         enable = true;
         latex.enable = true;
+        haskell.enable = true;
       };
       jetbrains.enable = true;
     };
