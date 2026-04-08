@@ -13,14 +13,18 @@
   home-configurations = {
     de.niri.enable = true;
 
-    developemt.cli.enable = true;
-    developemt.ides = {
-      vscode = {
-        enable = true;
-        latex.enable = true;
-        haskell.enable = true;
+    developemt = {
+      cli.enable = true;
+      svn.enable = true;
+      ides = {
+        vscode = {
+          enable = true;
+          latex.enable = true;
+          haskell.enable = true;
+        };
+        jetbrains.enable = false;
+        prolog.enable = true;
       };
-      jetbrains.enable = false;
     };
 
     media = {

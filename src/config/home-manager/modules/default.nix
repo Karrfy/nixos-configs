@@ -24,6 +24,7 @@
     # Import development apps
     ./development/ides.nix
     ./development/cli.nix
+    ./development/versioning.nix
 
     # Import gaming apps
     ./gaming/launchers.nix
