@@ -21,8 +21,8 @@
           haskell.enable = true;
         };
         jetbrains.enable = true;
-        cli.enable = true;
       };
+      cli.enable = true;
     };
 
     gaming.launchers.enable = true;
