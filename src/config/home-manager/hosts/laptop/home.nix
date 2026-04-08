@@ -13,7 +13,7 @@
   home-configurations = {
     de.niri.enable = true;
 
-    developemt = {
+    development = {
       cli.enable = true;
       svn.enable = true;
       ides = {

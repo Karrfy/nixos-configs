@@ -13,14 +13,16 @@
   home-configurations = {
     de.gnome.enable = true;
 
-    developemt.cli.enable = true;
-    developemt.ides = {
-      vscode = {
-        enable = true;
-        latex.enable = true;
-        haskell.enable = true;
+    development = {
+      ides = {
+        vscode = {
+          enable = true;
+          latex.enable = true;
+          haskell.enable = true;
+        };
+        jetbrains.enable = true;
+        cli.enable = true;
       };
-      jetbrains.enable = true;
     };
 
     gaming.launchers.enable = true;

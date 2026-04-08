@@ -9,7 +9,7 @@
 
 {
   options = {
-    home-configurations.developemt.cli = {
+    home-configurations.development.cli = {
       enable = lib.mkEnableOption {
         description = "Enables development cli tools home manager configurations.";
         default = false;
@@ -17,7 +17,7 @@
     };
   };
 
-  config = lib.mkIf config.home-configurations.developemt.cli.enable {
+  config = lib.mkIf config.home-configurations.development.cli.enable {
     home.packages = with pkgs; [
       nixfmt
     ];

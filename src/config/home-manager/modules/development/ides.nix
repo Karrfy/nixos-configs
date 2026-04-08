@@ -9,7 +9,7 @@
 
 {
   options = {
-    home-configurations.developemt.ides = {
+    home-configurations.development.ides = {
       vscode = {
         enable = lib.mkEnableOption {
           description = "Enables vscode home manager configurations.";
@@ -44,7 +44,7 @@
   };
 
   config = lib.mkMerge [
-    (lib.mkIf config.home-configurations.developemt.ides.vscode.enable {
+    (lib.mkIf config.home-configurations.development.ides.vscode.enable {
 
       nixpkgs.overlays = [ inputs.nix-vscode-extensions.overlays.default ];
 
@@ -77,8 +77,8 @@
 
     (lib.mkIf
       (
-        config.home-configurations.developemt.ides.vscode.enable
-        && config.home-configurations.developemt.ides.vscode.haskell.enable
+        config.home-configurations.development.ides.vscode.enable
+        && config.home-configurations.development.ides.vscode.haskell.enable
       )
       {
         home.packages = with pkgs; [
@@ -91,8 +91,8 @@
 
     (lib.mkIf
       (
-        config.home-configurations.developemt.ides.vscode.enable
-        && config.home-configurations.developemt.ides.vscode.latex.enable
+        config.home-configurations.development.ides.vscode.enable
+        && config.home-configurations.development.ides.vscode.latex.enable
       )
       {
         home.packages = with pkgs; [
@@ -101,13 +101,13 @@
       }
     )
 
-    (lib.mkIf (config.home-configurations.developemt.ides.prolog.enable) {
+    (lib.mkIf (config.home-configurations.development.ides.prolog.enable) {
       home.packages = with pkgs; [
         swi-prolog-gui
       ];
     })
 
-    (lib.mkIf config.home-configurations.developemt.ides.jetbrains.enable {
+    (lib.mkIf config.home-configurations.development.ides.jetbrains.enable {
       home.packages = with pkgs; [
         jetbrains.rider
         jetbrains.rust-rover
