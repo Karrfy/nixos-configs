@@ -34,6 +34,12 @@
           default = false;
         };
       };
+      prolog = {
+        enable = lib.mkEnableOption {
+          description = "Enables prolog ides home manager configurations.";
+          default = false;
+        };
+      };
     };
   };
 
@@ -94,6 +100,12 @@
         ];
       }
     )
+
+    (lib.mkIf (config.home-configurations.developemt.ides.prolog.enable) {
+      home.packages = with pkgs; [
+        swi-prolog-gui
+      ];
+    })
 
     (lib.mkIf config.home-configurations.developemt.ides.jetbrains.enable {
       home.packages = with pkgs; [
