@@ -48,8 +48,8 @@
         };
       };
       services = {
-        enablePrinting = true;
-        enableTailscale = false;
+        printing.enable = true;
+        tailscale.enable = false;
         autoupdate = {
           enable = true;
           configName = "desktop";

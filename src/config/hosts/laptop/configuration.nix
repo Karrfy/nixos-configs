@@ -50,8 +50,9 @@
       };
       secureboot.enable = true;
       services = {
-        enablePrinting = true;
-        enableTailscale = false;
+        printing.enable = true;
+        tailscale.enable = false;
+        flatpak.enable = true;
         autoupdate = {
           enable = true;
           configName = "laptop";

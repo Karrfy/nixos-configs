@@ -9,13 +9,17 @@
 {
   options = {
     system-configurations.shared.services = {
-      enablePrinting = lib.mkEnableOption {
+      printing.enable = lib.mkEnableOption {
         default = true;
         description = "Enables printing system configurations.";
       };
-      enableTailscale = lib.mkEnableOption {
+      tailscale.enable = lib.mkEnableOption {
         default = false;
         description = "Enables Tailscale services.";
+      };
+      flatpak.enable = lib.mkEnableOption {
+        default = false;
+        description = "Enables Flatpak services.";
       };
       autoupdate = {
         enable = lib.mkEnableOption {
@@ -37,13 +41,18 @@
   };
 
   config = lib.mkMerge [
-    (lib.mkIf config.system-configurations.shared.services.enablePrinting {
+    (lib.mkIf config.system-configurations.shared.services.printing.enable {
       # Enable CUPS to print documents.
       services.printing.enable = true;
     })
-    (lib.mkIf config.system-configurations.shared.services.enableTailscale {
+    (lib.mkIf config.system-configurations.shared.services.tailscale.enable {
       # Enable Tailscale for VPN network connections.
       services.tailscale.enable = true;
+    })
+
+    (lib.mkIf config.system-configurations.shared.services.flatpak.enable {
+      # Enable Flatpak for package installation.
+      services.flatpak.enable = true;
     })
     (
       let
