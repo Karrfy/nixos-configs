@@ -15,7 +15,7 @@
 
     development = {
       cli.enable = true;
-      svn.enable = true;
+      versioning.svn.enable = true;
       ides = {
         vscode = {
           enable = true;
