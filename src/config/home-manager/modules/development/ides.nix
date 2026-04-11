@@ -85,6 +85,7 @@
           ghc
           cabal-install
           haskell-language-server
+          haskellPackages.HUnit
         ];
       }
     )
