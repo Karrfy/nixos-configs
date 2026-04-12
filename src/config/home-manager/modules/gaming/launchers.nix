@@ -22,6 +22,7 @@
       modrinth-app
       lunar-client
       heroic
+      eden
     ];
   };
 }
