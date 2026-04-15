@@ -17,10 +17,6 @@
         default = false;
         description = "Enables Tailscale services.";
       };
-      flatpak.enable = lib.mkEnableOption {
-        default = false;
-        description = "Enables Flatpak services.";
-      };
       autoupdate = {
         enable = lib.mkEnableOption {
           description = "Enables nixos update script.";
@@ -48,11 +44,6 @@
     (lib.mkIf config.system-configurations.shared.services.tailscale.enable {
       # Enable Tailscale for VPN network connections.
       services.tailscale.enable = true;
-    })
-
-    (lib.mkIf config.system-configurations.shared.services.flatpak.enable {
-      # Enable Flatpak for package installation.
-      services.flatpak.enable = true;
     })
     (
       let

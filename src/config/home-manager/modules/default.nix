@@ -21,6 +21,9 @@
     # Import social apps
     ./social/voicechat.nix
 
+    # Import flatpak apps
+    ./flatpak/flatpak.nix
+
     # Import development apps
     ./development/ides.nix
     ./development/cli.nix

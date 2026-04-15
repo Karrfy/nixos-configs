@@ -23,7 +23,6 @@
           haskell.enable = true;
         };
         jetbrains.enable = false;
-        prolog.enable = true;
       };
     };
 
@@ -33,6 +32,11 @@
     };
 
     social.voicechat.enable = true;
+
+    flatpak = {
+      enable = true;
+      prolog.enable = true;
+    };
 
     tools = {
       security = {

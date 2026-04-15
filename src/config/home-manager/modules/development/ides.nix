@@ -102,12 +102,6 @@
       }
     )
 
-    (lib.mkIf (config.home-configurations.development.ides.prolog.enable) {
-      home.packages = with pkgs; [
-        swi-prolog-gui
-      ];
-    })
-
     (lib.mkIf config.home-configurations.development.ides.jetbrains.enable {
       home.packages = with pkgs; [
         jetbrains.rider
