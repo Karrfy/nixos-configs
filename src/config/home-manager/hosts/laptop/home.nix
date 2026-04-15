@@ -33,11 +33,6 @@
 
     social.voicechat.enable = true;
 
-    flatpak = {
-      enable = true;
-      prolog.enable = true;
-    };
-
     tools = {
       security = {
         general.enable = true;

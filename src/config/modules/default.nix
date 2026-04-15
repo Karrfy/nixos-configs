@@ -16,6 +16,9 @@
     # Import Greeter
     ./greeter/greetd.nix
 
+    # Import Flatpak
+    ./flatpak/flatpak.nix
+
     # Import locale settings
     ./local/de_us.nix
     ./local/de_de.nix

@@ -34,11 +34,6 @@
       pictures.enable = true;
     };
 
-    flatpak = {
-      enable = true;
-      prolog.enable = true;
-    };
-
     social.voicechat.enable = true;
 
     tools = {

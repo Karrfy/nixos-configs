@@ -31,6 +31,11 @@
     # Define Gnome Display Manager.
     dm.gdm.enable = true;
 
+    flatpak = {
+      enable = true;
+      prolog.enable = true;
+    };
+
     # Define critical system components
     shared = {
       networking = {
