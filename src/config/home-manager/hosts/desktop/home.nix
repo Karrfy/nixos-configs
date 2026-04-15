@@ -14,6 +14,7 @@
     de.gnome.enable = true;
 
     development = {
+      versioning.svn.enable = true;
       ides = {
         vscode = {
           enable = true;
