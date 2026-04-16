@@ -11,7 +11,7 @@
   ];
 
   home-configurations = {
-    de.niri.enable = true;
+    de.gnome.enable = true;
 
     development = {
       cli.enable = true;

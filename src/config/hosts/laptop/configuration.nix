@@ -27,10 +27,9 @@
 
   system-configurations = {
     # Define Deskop Enviroment
-    de.niri.enable = true;
-
-    # Define Greeter
-    greeter.greetd.enable = true;
+    de.gnome.enable = true;
+    # Define Gnome Display Manager.
+    dm.gdm.enable = true;
 
     flatpak = {
       enable = true;
