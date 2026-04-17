@@ -35,6 +35,8 @@
 
   boot.initrd.luks.devices."luks-bf3cc330-aee7-416c-acd2-9dae11fba479".device =
     "/dev/disk/by-uuid/bf3cc330-aee7-416c-acd2-9dae11fba479";
+  boot.initrd.luks.devices."luks-d4b105b5-dc1b-4f62-b8c7-372b836a29cc".device =
+    "/dev/disk/by-uuid/d4b105b5-dc1b-4f62-b8c7-372b836a29cc";
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/283D-D13F";
