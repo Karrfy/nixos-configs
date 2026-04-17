@@ -29,15 +29,15 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/01a40650-de6d-4eac-9072-3199dd8d11e3";
+    device = "/dev/mapper/luks-bf3cc330-aee7-416c-acd2-9dae11fba479";
     fsType = "ext4";
   };
 
-  boot.initrd.luks.devices."luks-e1277723-31a2-4db9-becc-38580c0d12dc".device =
-    "/dev/disk/by-uuid/e1277723-31a2-4db9-becc-38580c0d12dc";
+  boot.initrd.luks.devices."luks-bf3cc330-aee7-416c-acd2-9dae11fba479".device =
+    "/dev/disk/by-uuid/bf3cc330-aee7-416c-acd2-9dae11fba479";
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/711E-3369";
+    device = "/dev/disk/by-uuid/283D-D13F";
     fsType = "vfat";
     options = [
       "fmask=0077"
@@ -45,14 +45,9 @@
     ];
   };
 
-  swapDevices = [ ];
-
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
+  swapDevices = [
+    { device = "/dev/mapper/luks-d4b105b5-dc1b-4f62-b8c7-372b836a29cc"; }
+  ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
