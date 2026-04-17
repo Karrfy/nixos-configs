@@ -55,13 +55,17 @@
           userSettings = {
             "telemetry.telemetryLevel" = "off";
             "editor.formatOnSave" = true;
-            "git.autofetch" = "true";
+            "git.autofetch" = true;
             "git.fetchOnPull" = true;
             "git.enableSmartCommit" = true;
             "git.pruneOnFetch" = true;
             "git.confirmSync" = false;
             "latex-workshop.formatting.latex" = "latexindent";
             "haskell.manageHLS" = "PATH";
+            "github.copilot.enable" = {
+              "perl" = false;
+              "haskell" = false;
+            };
           };
           extensions = with pkgs.vscode-marketplace; [
             ms-vscode.vs-keybindings
