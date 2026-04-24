@@ -69,6 +69,9 @@
 
     # Define localization
     local.de_de.enable = true;
+
+    # Define gaming system components
+    gaming.steam.enable = true;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
