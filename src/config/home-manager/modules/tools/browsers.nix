@@ -27,6 +27,7 @@
     (lib.mkIf config.home-configurations.tools.browsers.enable {
       programs.firefox = {
         enable = true;
+        configPath = "${config.xdg.configHome}/mozilla/firefox";
         profiles.default = {
           search = {
             force = true;
