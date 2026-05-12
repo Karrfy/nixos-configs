@@ -21,7 +21,7 @@
 
   config = lib.mkIf config.home-configurations.development.versioning.svn.enable {
     home.packages = with pkgs; [
-      kdesvn
+      subversion
     ];
   };
 }
