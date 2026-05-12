@@ -20,6 +20,7 @@
   config = lib.mkIf config.home-configurations.development.cli.enable {
     home.packages = with pkgs; [
       nixd
+      nixfmt
     ];
     programs.direnv = {
       enable = true;
