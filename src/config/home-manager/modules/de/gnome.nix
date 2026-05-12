@@ -47,7 +47,7 @@
           "org.gnome.Nautilus.desktop"
           "steam.desktop"
           "spotify.desktop"
-          "vesktop.desktop"
+          "discord.desktop"
         ];
       };
       # Enable dynamic workspaces.
