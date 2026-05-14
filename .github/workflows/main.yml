@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 1
           
@@ -27,7 +27,7 @@ jobs:
         run: nix flake update --flake ./src/config
       
       - name: Commit flake.lock changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore(deps): update flake.lock'
           branch: main
