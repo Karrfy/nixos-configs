@@ -60,9 +60,12 @@
   };
   openInApp = {
     enable = true;
+    epic = false;
     spotify = true;
-    itunes = true;
-    tidal = true;
+    steam = false;
+    itunes = false;
+    tidal = false;
+    vrcx = false;
   };
   platformIndicators = {
     enable = true;
