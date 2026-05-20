@@ -8,11 +8,13 @@
   imports = [
     # Import Desktop enviroments/window managers
     ./de/gnome.nix
+    ./de/plasma.nix
     ./de/niri.nix
 
     # Import Greeter
     ./greeter/gdm.nix
     ./greeter/greetd.nix
+    ./greeter/plasma.nix
 
     # Import Flatpak
     ./flatpak/flatpak.nix
