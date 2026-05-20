@@ -11,7 +11,7 @@
   ];
 
   home-configurations = {
-    de.gnome.enable = true;
+    #de.kde.enable = true;
 
     development = {
       versioning.svn.enable = true;

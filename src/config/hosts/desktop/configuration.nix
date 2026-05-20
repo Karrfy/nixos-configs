@@ -26,10 +26,10 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   system-configurations = {
-    # Define Deskop Enviroment
-    de.gnome.enable = true;
-    # Define Gnome Display Manager.
-    greeter.gdm.enable = true;
+    # Enable KDE Plasma Desktop Environment
+    de.plasma.enable = true;
+    # Enable Plasma Greeter
+    greeter.plasma.enable = true;
 
     flatpak = {
       enable = true;
