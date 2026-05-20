@@ -54,6 +54,7 @@
       };
       services = {
         printing.enable = true;
+        bluetooth.enable = true;
         autoupdate = {
           enable = true;
           configName = "desktop";

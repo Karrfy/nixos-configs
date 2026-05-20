@@ -13,6 +13,10 @@
         default = true;
         description = "Enables printing system configurations.";
       };
+      bluetooth.enable = lib.mkEnableOption {
+        default = true;
+        description = "Enables Bluetooth support.";
+      };
       tailscale.enable = lib.mkEnableOption {
         default = false;
         description = "Enables Tailscale services.";
@@ -40,6 +44,10 @@
     (lib.mkIf config.system-configurations.shared.services.printing.enable {
       # Enable CUPS to print documents.
       services.printing.enable = true;
+    })
+    (lib.mkIf config.system-configurations.shared.services.bluetooth.enable {
+      # Enable Bluetooth support.
+      hardware.bluetooth.enable = true;
     })
     (lib.mkIf config.system-configurations.shared.services.tailscale.enable {
       # Enable Tailscale for VPN network connections.

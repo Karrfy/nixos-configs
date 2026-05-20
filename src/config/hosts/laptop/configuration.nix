@@ -55,6 +55,7 @@
       secureboot.enable = true;
       services = {
         printing.enable = true;
+        bluetooth.enable = true;
         tailscale.enable = false;
         autoupdate = {
           enable = true;
