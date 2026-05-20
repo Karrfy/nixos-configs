@@ -8,15 +8,15 @@
 {
 
   options = {
-    system-configurations.dm.gdm = {
+    system-configurations.greeter.gdm = {
       enable = lib.mkEnableOption {
-        description = "Enables GNOME display manager desktop enviroment.";
+        description = "Enables GNOME greeter.";
         default = false;
       };
     };
   };
 
-  config = lib.mkIf config.system-configurations.dm.gdm.enable {
+  config = lib.mkIf config.system-configurations.greeter.gdm.enable {
 
     # Enable the GNOME display manager.
     services.displayManager.gdm.enable = true;

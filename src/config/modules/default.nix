@@ -10,10 +10,8 @@
     ./de/gnome.nix
     ./de/niri.nix
 
-    # Import Display manager
-    ./dm/gdm.nix
-
     # Import Greeter
+    ./greeter/gdm.nix
     ./greeter/greetd.nix
 
     # Import Flatpak

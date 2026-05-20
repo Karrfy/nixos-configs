@@ -29,7 +29,7 @@
     # Define Deskop Enviroment
     de.gnome.enable = true;
     # Define Gnome Display Manager.
-    dm.gdm.enable = true;
+    greeter.gdm.enable = true;
 
     flatpak = {
       enable = true;
