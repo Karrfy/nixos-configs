@@ -175,11 +175,11 @@
         "nixpkgs-nixcord": "nixpkgs-nixcord"
       },
       "locked": {
-        "lastModified": 1779293722,
-        "narHash": "sha256-qmmTs9duxTg03nK23n0JVjR8/jRv23IJ89NkKIqhlRc=",
+        "lastModified": 1779326148,
+        "narHash": "sha256-yQT+FN1yKX2mIJmvxE36aSQxfnc3W8qXWl+JQD1CZ4U=",
         "owner": "FlameFlag",
         "repo": "nixcord",
-        "rev": "fd4665b48f7894ceadfed686b6681d58385f4d44",
+        "rev": "e8f68baf992912d8d79268835793eaf85ed146f7",
         "type": "github"
       },
       "original": {
@@ -279,6 +279,29 @@
         "type": "github"
       }
     },
+    "plasma-manager": {
+      "inputs": {
+        "home-manager": [
+          "home-manager"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775856943,
+        "narHash": "sha256-b7Mp7P+q2Md5AGt4rjHfMcBykzMumFTen10ST++AuTU=",
+        "owner": "nix-community",
+        "repo": "plasma-manager",
+        "rev": "a524a6160e6df89f7673ba293cf7d78b559eb1a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "plasma-manager",
+        "type": "github"
+      }
+    },
     "pre-commit": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -311,6 +334,7 @@
         "nixcord": "nixcord",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
+        "plasma-manager": "plasma-manager",
         "spicetify-nix": "spicetify-nix"
       }
     },
