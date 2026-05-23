@@ -47,7 +47,10 @@
     })
     (lib.mkIf config.system-configurations.shared.services.bluetooth.enable {
       # Enable Bluetooth support.
-      hardware.bluetooth.enable = true;
+      hardware.bluetooth = {
+        enable = true;
+        settings.General.Experimental = true;
+      };
     })
     (lib.mkIf config.system-configurations.shared.services.tailscale.enable {
       # Enable Tailscale for VPN network connections.
