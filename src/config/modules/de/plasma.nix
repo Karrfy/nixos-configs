@@ -29,7 +29,7 @@
     # Add additional KDE packages
     environment.systemPackages = with pkgs; [
       kdePackages.discover
-      kdePackages.KCalc
+      kdePackages.kcalc
     ];
   };
 }
