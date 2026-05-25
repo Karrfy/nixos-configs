@@ -10,11 +10,13 @@
     ./de/gnome.nix
     ./de/plasma.nix
     ./de/niri.nix
+    ./de/cosmic.nix
 
     # Import Greeter
     ./greeter/gdm.nix
     ./greeter/greetd.nix
     ./greeter/plasma.nix
+    ./greeter/cosmic.nix
 
     # Import Flatpak
     ./flatpak/flatpak.nix
