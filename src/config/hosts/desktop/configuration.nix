@@ -27,9 +27,9 @@
 
   system-configurations = {
     # Enable Desktop Environment
-    de.cosmic.enable = true;
+    de.plasma.enable = true;
     # Enable Greeter
-    greeter.cosmic.enable = true;
+    greeter.plasma.enable = true;
 
     flatpak = {
       enable = true;
