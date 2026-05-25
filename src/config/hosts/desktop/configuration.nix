@@ -26,10 +26,10 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   system-configurations = {
-    # Enable KDE Plasma Desktop Environment
-    de.plasma.enable = true;
-    # Enable Plasma Greeter
-    greeter.plasma.enable = true;
+    # Enable Desktop Environment
+    de.cosmic.enable = true;
+    # Enable Greeter
+    greeter.cosmic.enable = true;
 
     flatpak = {
       enable = true;
