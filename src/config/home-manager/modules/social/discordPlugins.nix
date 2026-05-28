@@ -13,6 +13,22 @@
     enable = true;
     attemptToPreventCrashes = true;
   };
+  declutter = {
+    enable = true;
+    alwaysShowUsername = false;
+    removeAudioMenus = false;
+    removeAvatarDecoration = false;
+    removeBillingSettings = false;
+    removeButtonTooltips = false;
+    removeClanTag = false;
+    removeGiftButton = true;
+    removeNameplate = false;
+    removeProfileEffect = false;
+    removeQuestsAboveDM = true;
+    removeServerBoostInfo = false;
+    removeShopAboveDM = true;
+    removeUnavailableEmojiPicker = false;
+  };
   disableCallIdle.enable = true;
   fakeNitro = {
     enable = true;
