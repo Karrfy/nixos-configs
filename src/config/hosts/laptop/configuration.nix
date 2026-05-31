@@ -51,6 +51,7 @@
           enable = true;
           olderThan = "30";
         };
+        optimise-store.enable = true;
       };
       secureboot.enable = true;
       services = {

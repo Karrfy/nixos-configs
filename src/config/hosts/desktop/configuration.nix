@@ -51,6 +51,7 @@
           enable = true;
           olderThan = "7";
         };
+        optimise-store.enable = true;
       };
       services = {
         printing.enable = true;
