@@ -24,6 +24,12 @@
           default = "7";
         };
       };
+      optimise-store = {
+        enable = lib.mkEnableOption {
+          description = "Enables nix store optimisation features.";
+          default = false;
+        };
+      };
     };
   };
 
@@ -41,6 +47,10 @@
         dates = "daily";
         options = "--delete-older-than ${config.system-configurations.shared.nixFeatures.gc.olderThan}d";
       };
+    })
+
+    (lib.mkIf config.system-configurations.shared.nixFeatures.optimise-store.enable {
+      nix.settings.auto-optimise-store = true;
     })
   ];
 }
