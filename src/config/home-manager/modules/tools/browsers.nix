@@ -105,6 +105,7 @@
         home.packages = with pkgs; [
           ungoogled-chromium
           tor-browser
+          mullvad-browser
         ];
       }
     )
