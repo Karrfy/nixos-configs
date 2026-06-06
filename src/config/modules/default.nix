@@ -21,6 +21,9 @@
     # Import Flatpak
     ./flatpak/flatpak.nix
 
+    # Import Fonts
+    ./fonts/fonts.nix
+
     # Import locale settings
     ./local/de_us.nix
     ./local/de_de.nix

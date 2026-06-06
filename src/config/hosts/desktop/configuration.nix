@@ -36,6 +36,8 @@
       prolog.enable = true;
     };
 
+    fonts.cjk.enable = true;
+
     # Define critical system components
     shared = {
       networking = {
