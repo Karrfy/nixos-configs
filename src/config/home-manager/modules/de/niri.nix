@@ -25,7 +25,7 @@
     # Set configuration file for niri
     xdg.configFile."niri/config.kdl".source = ../../configs/niri/niriConfig.${configName}.kdl;
 
-    programs.noctalia-shell = {
+    programs.noctalia = {
       enable = true;
       settings = ../../configs/niri/noctaliaSettings.${configName}.json;
     };
