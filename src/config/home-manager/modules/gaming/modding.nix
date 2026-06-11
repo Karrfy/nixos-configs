@@ -20,6 +20,7 @@
     home.packages = with pkgs; [
       r2modman
       openrct2
+      zenity
     ];
   };
 }
