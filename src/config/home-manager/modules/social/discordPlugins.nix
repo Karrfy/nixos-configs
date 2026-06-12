@@ -5,8 +5,8 @@
   };
   betterSessions.enable = true;
   biggerStreamPreview.enable = true;
-  BlurNSFW.enable = true;
-  ClearURLs.enable = true;
+  blurNsfw.enable = true;
+  clearUrls.enable = true;
   consoleJanitor.enable = true;
   copyFileContents.enable = true;
   crashHandler = {
@@ -24,9 +24,9 @@
     removeGiftButton = true;
     removeNameplate = false;
     removeProfileEffect = false;
-    removeQuestsAboveDM = true;
+    removeQuestsAboveDm = true;
     removeServerBoostInfo = false;
-    removeShopAboveDM = true;
+    removeShopAboveDm = true;
     removeUnavailableEmojiPicker = false;
   };
   disableCallIdle.enable = true;
