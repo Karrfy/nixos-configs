@@ -24,9 +24,9 @@
     removeGiftButton = true;
     removeNameplate = false;
     removeProfileEffect = false;
-    removeQuestsAboveDm = true;
+    removeQuestsAboveDms = true;
     removeServerBoostInfo = false;
-    removeShopAboveDm = true;
+    removeShopAboveDms = true;
     removeUnavailableEmojiPicker = false;
   };
   disableCallIdle.enable = true;
