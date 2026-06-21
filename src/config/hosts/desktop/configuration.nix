@@ -31,11 +31,6 @@
     # Enable Greeter
     greeter.plasma.enable = true;
 
-    flatpak = {
-      enable = true;
-      prolog.enable = true;
-    };
-
     fonts.cjk.enable = true;
 
     # Define critical system components
@@ -58,6 +53,7 @@
       services = {
         printing.enable = true;
         bluetooth.enable = true;
+        flatpak.enable = true;
         autoupdate = {
           enable = true;
           configName = "desktop";

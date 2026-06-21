@@ -17,6 +17,10 @@
         default = true;
         description = "Enables Bluetooth support.";
       };
+      flatpak.enable = lib.mkEnableOption {
+        default = false;
+        description = "Enables Flatpak support.";
+      };
       tailscale.enable = lib.mkEnableOption {
         default = false;
         description = "Enables Tailscale services.";
@@ -51,6 +55,9 @@
         enable = true;
         settings.General.Experimental = true;
       };
+    })
+    (lib.mkIf config.system-configurations.shared.services.flatpak.enable {
+      services.flatpak.enable = true;
     })
     (lib.mkIf config.system-configurations.shared.services.tailscale.enable {
       # Enable Tailscale for VPN network connections.

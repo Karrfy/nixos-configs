@@ -31,11 +31,6 @@
     # Define Gnome Display Manager.
     greeter.gdm.enable = true;
 
-    flatpak = {
-      enable = true;
-      prolog.enable = true;
-    };
-
     # Define critical system components
     shared = {
       networking = {
@@ -58,6 +53,7 @@
         printing.enable = true;
         bluetooth.enable = true;
         tailscale.enable = false;
+        flatpak.enable = true;
         autoupdate = {
           enable = true;
           configName = "laptop";

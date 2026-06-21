@@ -18,9 +18,6 @@
     ./greeter/plasma.nix
     ./greeter/cosmic.nix
 
-    # Import Flatpak
-    ./flatpak/flatpak.nix
-
     # Import Fonts
     ./fonts/fonts.nix
 
